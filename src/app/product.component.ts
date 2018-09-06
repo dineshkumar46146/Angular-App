@@ -11,6 +11,10 @@ export class ProductComponent {
   setAction(action){
    
     this.action2 = action;
-
+    
+  }
+  constructor() {
+    this.fullImagePath = '/img/img1.jpg';
+    this.fullImagePath = '/img/img1.jpg';
   }
 }
