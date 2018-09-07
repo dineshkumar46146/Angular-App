@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProductComponent {
   title = 'Test-app';
+  fullImagePath;
   action2 = 'product';
   setAction(action){
    
@@ -15,6 +16,6 @@ export class ProductComponent {
   }
   constructor() {
     this.fullImagePath = '/img/img1.jpg';
-    this.fullImagePath = '/img/img1.jpg';
+  
   }
 }

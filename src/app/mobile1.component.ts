@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Mobile1Component {
   title = 'Test-app';
+  fullImagePath;
   constructor() {
     this.fullImagePath = '/img/img1.jpg';
   }
