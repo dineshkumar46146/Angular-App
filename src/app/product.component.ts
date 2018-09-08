@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PRODUCT_LIST } from './product.model';
 
 @Component({
   selector: 'app-product',
@@ -9,13 +10,11 @@ export class ProductComponent {
   title = 'Test-app';
   fullImagePath;
   action2 = 'product';
-  setAction(action){
-   
-    this.action2 = action;
-    
-  }
+  products = PRODUCT_LIST;
   constructor() {
     this.fullImagePath = '/img/img1.jpg';
-  
+  }
+  setAction(action){
+    this.action2 = action;
   }
 }

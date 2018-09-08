@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 @Component({
-  selector: 'app-aboutus',
-  templateUrl: './aboutus.component.html'
+  selector: 'app-pagination',
+  templateUrl: './pagination.component.html',
 //   styleUrls: ['./app.component.css']
-})
-export class AboutUsComponent {
+}) 
+export class PaginationComponent {
   title = 'Test-app';
+  
 }
