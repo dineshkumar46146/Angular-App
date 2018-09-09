@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header.component';
 import { BodyComponent } from './body.component';
@@ -11,6 +12,7 @@ import { ContactUsComponent } from './contactus.component';
 import { AboutUsComponent } from './aboutus.component';
 import { Mobile1Component } from './mobile1.component';
 import { PaginationComponent } from './pagination.component';
+import { WorkspaceComponent } from './workspace.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +25,13 @@ import { PaginationComponent } from './pagination.component';
     ContactUsComponent,
     AboutUsComponent,
     Mobile1Component,
-    PaginationComponent
+    PaginationComponent,
+    WorkspaceComponent
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

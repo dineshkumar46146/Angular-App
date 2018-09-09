@@ -1,25 +1,28 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" >
         <div class="container">
-            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand " (click)="shareMenuSelection('home')">Home</a>
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                 &#9776;
             </button>
             <div class="collapse navbar-collapse" id="exCollapsingNavbar">
                 <ul class="nav navbar-nav">
-                   
-                    <ul class="nav-item" data-toggle="dropdown" class="nav-link dropdown-toggle">Products 
-   
+                    <ul class="nav-item" data-toggle="dropdown1" (click)="shareMenuSelection('product')" class="nav-link dropdown-toggle">Products
+                        <span class="caret"></span>                     
                     </ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+
+                    <!--li *ngFor="let prod of prodDtl" class="nav-item"><a (click)="action='contactus'" class="nav-link">{{prod.name}}</a></li-->
+                    <li class="nav-item"><a (click)="shareMenuSelection('contactus')" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a (click)="shareMenuSelection('aboutus')" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a (click)="shareMenuSelection('home')" class="nav-link">{{titleInfo}}</a></li>
                 </ul>
                 <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                     <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li>
                     <li class="dropdown order-1">
-                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login <span class="caret"></span></button>
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login
+                            <span class="caret"></span></button>
                         <ul class="dropdown-menu dropdown-menu-right mt-2">
-                           <li class="px-3 py-2">
-                               <form class="form" role="form">
+                            <li class="px-3 py-2">
+                                <form class="form" role="form">
                                     <div class="form-group">
                                         <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="">
                                     </div>
@@ -40,6 +43,3 @@
             </div>
         </div>
     </nav>
-    
-
-

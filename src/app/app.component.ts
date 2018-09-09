@@ -7,13 +7,19 @@ import { PRODUCT_LIST } from './product.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Test-app';
+  title = 'Winners';
   action = 'home';
+  selectedProduct: string;
   productList = PRODUCT_LIST;
-  // action2 = 'product';
-  setAction(action){
-    this.action= action;
-    // this.action2 = action;
 
+  mySelectedMenu(selectedText) : void {
+    console.log("my selected text : ",selectedText);
+    this.action= selectedText[0];
+    this.selectedProduct= selectedText[1];
+  }
+  setAction (selectedText, productCode) {
+    this.action = selectedText;
+    this.selectedProduct = productCode;
+    console.log(this.selectedProduct);
   }
 }
