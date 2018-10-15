@@ -13,6 +13,9 @@ import { AboutUsComponent } from './aboutus.component';
 import { Mobile1Component } from './mobile1.component';
 import { PaginationComponent } from './pagination.component';
 import { WorkspaceComponent } from './workspace.component';
+import { PagerService } from './_services/index';
+import { HttpModule } from '@angular/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,14 +29,14 @@ import { WorkspaceComponent } from './workspace.component';
     AboutUsComponent,
     Mobile1Component,
     PaginationComponent,
-    WorkspaceComponent
-
+    WorkspaceComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpModule,
   ],
-  providers: [],
+  providers: [PagerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
